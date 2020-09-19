@@ -1,3 +1,4 @@
+woii
 function jquery_onload() {
     $('html, body').animate({
         'scrollTop': $('#welcome').offset().top
