@@ -3,20 +3,20 @@ function jquery_onload() {
         'scrollTop': $('#welcome').offset().top
     }, 0), $('html, body').animate({
         'scrollLeft': $('#welcome').offset().left
-    }, 0), $(document).on('click', 'a[href*="#about"]', function (_0x4ae5cc) {
-        _0x4ae5cc.preventDefault(), $('html, body').animate({
+    }, 0), $(document).on('click', 'a[href*="#about"]', function (q) {
+        q.preventDefault(), $('html, body').animate({
             'scrollLeft': $('#about').offset().left
         }, 400);
-    }), $(document).on('click', 'a[href*="#loop"]', function (_0x2c7597) {
-        _0x2c7597.preventDefault(), $('html, body').animate({
+    }), $(document).on('click', 'a[href*="#loop"]', function (w) {
+        w.preventDefault(), $('html, body').animate({
             'scrollTop': $('#loop').offset().top
         }, 200);
-    }), $(document).on('click', 'a[href*="#contact"]', function (_0x5bb07e) {
-        _0x5bb07e.preventDefault(), $('html, body').animate({
+    }), $(document).on('click', 'a[href*="#contact"]', function (r) {
+        r.preventDefault(), $('html, body').animate({
             'scrollLeft': $('#contact').offset().left
         }, 400);
-    }), $(document).on('click', 'a[href*="#welcome"]', function (_0x3866dd) {
-        _0x3866dd.preventDefault(), $('html, body').animate({
+    }), $(document).on('click', 'a[href*="#welcome"]', function (y) {
+        y.preventDefault(), $('html, body').animate({
             'scrollTop': $('#welcome').offset().top
         }, 200);
     }), lazyload();
