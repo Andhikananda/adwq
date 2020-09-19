@@ -1,4 +1,3 @@
-woii
 function jquery_onload() {
     $('html, body').animate({
         'scrollTop': $('#welcome').offset().top
@@ -24,18 +23,18 @@ function jquery_onload() {
 }
 function lazyload() {
     $('[data-src]').each(function () {
-        var _0x57aba8 = $(this),
-            _0x2123ca = $(this).attr('data-src'),
-            _0x2e7d3f = $(this).prop('tagName').toLowerCase(),
-            _0x5e1e2b = $(this).offset().top,
-            _0x50db7a = $(window).height() * Number2;
-        _0x5e1e2b < _0x50db7a && (_0x2e7d3f == 'img' || _0x2e7d3f == 'iframe' ? (_0x57aba8.attr('src', _0x2123ca), _0x57aba8.on('load', function () {
-            _0x57aba8.addClass('loaded'), setTimeout(function () {
-                _0x57aba8.removeClass('loaded').removeAttr('data-src');
+        var $(this) = $(this),
+            data_src = $(this).attr('data-src'),
+            andhikaa = $(this).prop('tagName').toLowerCase(),
+            ananda = $(this).offset().top,
+            sayang = $(window).height() * Number2;
+        ananda < sayang && (andhikaa == 'img' || andhikaa == 'iframe' ? ($(this).attr('src', data_src), $(this).on('load', function () {
+            $(this).addClass('loaded'), setTimeout(function () {
+                $(this).removeClass('loaded').removeAttr('data-src');
             }, 100);
-        })) : $('<img/>').attr('src', _0x2123ca).on('load', function () {
-            $(this).remove(), _0x57aba8.css('background-image', 'url(' + _0x2123ca + ')'), _0x57aba8.addClass('loaded'), setTimeout(function () {
-                _0x57aba8.removeClass('loaded').removeAttr('data-src');
+        })) : $('<img/>').attr('src', data_src).on('load', function () {
+            $(this).remove(), $(this).css('background-image', 'url(' + data_src + ')'), $(this).addClass('loaded'), setTimeout(function () {
+                $(this).removeClass('loaded').removeAttr('data-src');
             }, 100);
         }));
     }), $(window).on('scroll', function () {
